@@ -1,15 +1,10 @@
 # source: https://gist.github.com/benc
 # 	https://gist.github.com/benc/a9b74c537f667a8dd28e#file-mvn-load
 # Maven colored output
-# ====================
-#
-# NOTE: on OSX, install GNU sed:
-#
-#   brew install gnu-sed --default-names
-#
-# if not available mvn
-#   echo "Please install 'maven' first!"; return 1
-# end
+
+if not available mvn
+  echo "Please install 'maven' first!"
+end
 
 set -x BOLD (tput bold)
 set -x UNDERLINE_ON (tput smul)
