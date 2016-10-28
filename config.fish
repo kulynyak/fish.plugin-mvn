@@ -2,7 +2,7 @@
 # 	https://gist.github.com/benc/a9b74c537f667a8dd28e#file-mvn-load
 # Maven colored output
 
-if not not type -q  "mvn"
+if not type -q  "mvn"
   echo "Please install 'maven' first!"
 end
 
